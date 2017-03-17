@@ -7,6 +7,8 @@
 //
 
 #import "ViewController.h"
+#import "BasicController.h"
+#import "SpringController.h"
 
 @interface ViewController ()
 
@@ -18,6 +20,40 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
 }
+
+- (IBAction)operationAction:(UIButton *)sender {
+    
+    UIViewController *nextVC;
+    
+    switch (sender.tag) {
+        case 0:
+            
+            nextVC = [[BasicController alloc] init];
+            
+            break;
+            
+        case 1:
+            
+            nextVC = [[SpringController alloc] init];
+            
+            break;
+
+        case 2:
+            
+            break;
+
+        case 3:
+            
+            break;
+
+        default:
+            break;
+    }
+    
+    [self.navigationController pushViewController:nextVC animated:YES];
+    
+}
+
 
 
 - (void)didReceiveMemoryWarning {

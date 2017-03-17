@@ -19,6 +19,7 @@
 		239264241E7B824D004899AB /* BasicController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 239264221E7B824D004899AB /* BasicController.xib */; };
 		239264281E7B83E7004899AB /* SpringController.m in Sources */ = {isa = PBXBuildFile; fileRef = 239264261E7B83E7004899AB /* SpringController.m */; };
 		239264291E7B83E7004899AB /* SpringController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 239264271E7B83E7004899AB /* SpringController.xib */; };
+		E78C7CB012E236F5D44DFD56 /* libPods-AnimationDemon.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 130969DA3CA0251101269B59 /* libPods-AnimationDemon.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		130969DA3CA0251101269B59 /* libPods-AnimationDemon.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AnimationDemon.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2320ADA01E7B752800DEA672 /* AnimationDemon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnimationDemon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2320ADA41E7B752800DEA672 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2320ADAD1E7B752800DEA672 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -61,6 +63,9 @@
 		239264251E7B83E7004899AB /* SpringController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpringController.h; sourceTree = "<group>"; };
 		239264261E7B83E7004899AB /* SpringController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpringController.m; sourceTree = "<group>"; };
 		239264271E7B83E7004899AB /* SpringController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SpringController.xib; sourceTree = "<group>"; };
+		2392642A1E7B94D5004899AB /* Header.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Header.pch; sourceTree = "<group>"; };
+		246F21861936D428A0042D86 /* Pods-AnimationDemon.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnimationDemon.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AnimationDemon/Pods-AnimationDemon.debug.xcconfig"; sourceTree = "<group>"; };
+		BF66796AF522748744ECD83E /* Pods-AnimationDemon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnimationDemon.release.xcconfig"; path = "Pods/Target Support Files/Pods-AnimationDemon/Pods-AnimationDemon.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E78C7CB012E236F5D44DFD56 /* libPods-AnimationDemon.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,6 +101,8 @@
 				2320ADBC1E7B752800DEA672 /* AnimationDemonTests */,
 				2320ADC71E7B752800DEA672 /* AnimationDemonUITests */,
 				2320ADA11E7B752800DEA672 /* Products */,
+				BBF9E43A153156012D175434 /* Pods */,
+				DCB7130410C6355A6FE2D749 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -120,6 +128,7 @@
 		2320ADA31E7B752800DEA672 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				2392642A1E7B94D5004899AB /* Header.pch */,
 				2320ADAC1E7B752800DEA672 /* Main.storyboard */,
 				2320ADAF1E7B752800DEA672 /* Assets.xcassets */,
 				2320ADB11E7B752800DEA672 /* LaunchScreen.storyboard */,
@@ -228,6 +237,23 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
+		BBF9E43A153156012D175434 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				246F21861936D428A0042D86 /* Pods-AnimationDemon.debug.xcconfig */,
+				BF66796AF522748744ECD83E /* Pods-AnimationDemon.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		DCB7130410C6355A6FE2D749 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				130969DA3CA0251101269B59 /* libPods-AnimationDemon.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -235,9 +261,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2320ADCD1E7B752800DEA672 /* Build configuration list for PBXNativeTarget "AnimationDemon" */;
 			buildPhases = (
+				5AAD0D04E175914E35F2BB13 /* [CP] Check Pods Manifest.lock */,
 				2320AD9C1E7B752800DEA672 /* Sources */,
 				2320AD9D1E7B752800DEA672 /* Frameworks */,
 				2320AD9E1E7B752800DEA672 /* Resources */,
+				349F40F9A44902B876C4859C /* [CP] Embed Pods Frameworks */,
+				A2644EE83C58CDD3638550D1 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -295,6 +324,7 @@
 				TargetAttributes = {
 					2320AD9F1E7B752800DEA672 = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = AJ4YA27V26;
 						ProvisioningStyle = Automatic;
 					};
 					2320ADB81E7B752800DEA672 = {
@@ -357,6 +387,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		349F40F9A44902B876C4859C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AnimationDemon/Pods-AnimationDemon-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5AAD0D04E175914E35F2BB13 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A2644EE83C58CDD3638550D1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AnimationDemon/Pods-AnimationDemon-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2320AD9C1E7B752800DEA672 /* Sources */ = {
@@ -512,8 +590,12 @@
 		};
 		2320ADCE1E7B752800DEA672 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 246F21861936D428A0042D86 /* Pods-AnimationDemon.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = AJ4YA27V26;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PRODUCT_NAME)/Header.pch";
 				INFOPLIST_FILE = AnimationDemon/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Demon.AnimationDemon;
@@ -523,8 +605,12 @@
 		};
 		2320ADCF1E7B752800DEA672 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BF66796AF522748744ECD83E /* Pods-AnimationDemon.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = AJ4YA27V26;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PRODUCT_NAME)/Header.pch";
 				INFOPLIST_FILE = AnimationDemon/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Demon.AnimationDemon;
